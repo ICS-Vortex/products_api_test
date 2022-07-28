@@ -31,7 +31,7 @@ symfony console d:d:create
 symfony console d:m:migrate --no-interaction
 ```
 
-6. Use `/api` endpoint in order to play with API
+6. Open URL `localhost:8080/api` in browser to play with API
 
 Console Commands
 ================
