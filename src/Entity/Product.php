@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Annotation\ApiSubresource;
 use App\Repository\ProductRepository;
 use App\Util\TLifecycleCallback;
 use DateTimeImmutable;
@@ -22,6 +23,7 @@ class Product
     private ?int $id = null;
 
     #[ORM\ManyToOne(inversedBy: 'products')]
+    #[ApiSubresource]
     private ?Category $category = null;
 
     #[ORM\Column(length: 50)]
